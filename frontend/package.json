@@ -1,0 +1,65 @@
+{
+  "name": "nutriapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@react-navigation/native": "^7.1.14",
+    "@react-navigation/stack": "^7.4.2",
+    "expo": "~53.0.20",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-web": "^0.20.0"
+  },
+ "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-transform-class-properties": "^7.27.1",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.27.1",
+    "@babel/plugin-transform-optional-chaining": "^7.27.1",
+    "@react-native-community/cli": "^19.1.0"
+  },
+  "overrides": {
+    "glob": "^10.4.5",
+    "rimraf": "^4.4.1",
+    "@xmldom/xmldom": "^0.8.10",
+    "@babel/plugin-proposal-class-properties": "npm:@babel/plugin-transform-class-properties@^7.27.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "npm:@babel/plugin-transform-nullish-coalescing-operator@^7.27.1",
+    "@babel/plugin-proposal-optional-chaining": "npm:@babel/plugin-transform-optional-chaining@^7.27.1",
+    "temp": {
+      "glob": "^10.4.5",
+      "rimraf": "^4.4.1"
+    },
+    "chromium-edge-launcher": {
+      "glob": "^10.4.5"
+    },
+    "jscodeshift": {
+      "glob": "^10.4.5"
+    },
+    "babel-plugin-istanbul": {
+      "glob": "^10.4.5"
+    }
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "react-native-chart-kit",
+          "react-native-responsive-screen",
+          "react-native-table-component"
+        ],
+        "listUnknownPackages": false
+      }
+    }
+  },
+  "private": true
+}
